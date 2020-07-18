@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_cycle">
+
+    <ImageView
+        android:id="@+id/reset_password_fragment_logo"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:src="@drawable/login_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/forget_password_fragment_et_phone_number"
+        style="@style/user_cycle_ed_style"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:background="@drawable/et_bg_shape"
+        android:hint="@string/mobile_hint"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reset_password_fragment_logo" />
+
+    <EditText
+        android:id="@+id/login_fragment_et_password"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:hint="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forget_password_fragment_et_phone_number" />
+
+
+    <TextView
+        android:id="@+id/login_fragment_tv_forget_password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_weight="1"
+        android:fontFamily="@font/ge_snd_book"
+        android:gravity="end"
+        android:text="@string/login_fragment_tv_forget_your_password"
+        android:textColor="@color/quite_white"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_et_password" />
+
+    <CheckBox
+        android:id="@+id/login_fragment_cb_remember_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_marginEnd="@dimen/_25sdp"
+        android:layout_weight="1"
+        android:buttonTint="@color/quite_white"
+        android:fontFamily="@font/ge_snd_book"
+        android:gravity="start"
+        android:text="@string/login_fragment_cb_remember_me"
+        android:textColor="@color/quite_white"
+        android:textSize="@dimen/_13ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_et_password" />
+
+    <Button
+        android:id="@+id/login_fragment_btn_login"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:background="@drawable/et_bg_shape"
+        android:fontFamily="@font/ge_snd_book"
+        android:text="@string/login_fragment_btn_login"
+        android:textColor="@color/dark_red"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_cb_remember_me" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/quite_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_fragment_btn_login"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/login_fragment_tv_create_account"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:fontFamily="@font/ge_snd_book"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/login_fragment_tv_creatanaccount"
+            android:textColor="@color/dark_red" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

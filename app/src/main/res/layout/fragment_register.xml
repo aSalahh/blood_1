@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/user_cycle"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/_5sdp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/ge_snd_book"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="@string/register_fragment_tv_create_an_account"
+        android:textColor="@color/quite_white"
+        android:textSize="@dimen/_17ssp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_name"
+        style="@style/user_cycle_ed_style"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/person_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_hint_name" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_mail"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/mail_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_mail" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_birthday"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/date_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_birthday" />
+
+    <EditText
+        android:id="@+id/register_fragment_spinner_blood_type"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/blood_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:entries="@string/register_fragment_et_blood_type"
+        android:hint="@string/register_fragment_et_blood_type" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_date_of_last_donation"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/date_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_date_of_last_donation" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_government"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/home_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_government" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_city"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/home_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_city" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_phone_number"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/phone_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_phone_number" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_password"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/password_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_password" />
+
+    <EditText
+        android:id="@+id/register_fragment_et_confirm_password"
+        style="@style/user_cycle_ed_style"
+        android:background="@drawable/et_bg_shape"
+        android:drawableEnd="@drawable/password_drawable"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="@string/register_fragment_et_confirm_password" />
+
+    <Button
+        android:id="@+id/register_fragment_btn_register"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/et_bg_shape"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/ge_snd_book"
+        android:hint="@string/register_fragment_btn_register"
+        android:textColorHint="@color/dark_red" />
+
+</LinearLayout>
